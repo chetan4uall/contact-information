@@ -1,0 +1,4 @@
+1.This application is developed using Spring boot, thymeleaf, mysql database.
+2.contact_information schema should be created in mysql database before running the application.
+3.Download this from git and run as spring boot app
+4.root URL would be http://localhost:8080/

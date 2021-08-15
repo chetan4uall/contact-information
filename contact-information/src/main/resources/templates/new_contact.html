@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeLeaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Contact Information System</title>
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	crossorigin="anonymous">
+
+
+</head>
+<body>
+	<div class="container">
+		<h1>Contact Information System</h1>
+		<hr>
+		<h2>Save Contact</h2>
+
+		<form action="#" th:action="@{/saveContact}" th:object="${contact}"
+			method="POST">
+			<input type="text" th:field="*{firstName}"
+				placeholder="Contact First Name" class="form-control mb-4 col-4">
+			<input type="text" th:field="*{lastName}"
+				placeholder="Contact Last Name" class="form-control mb-4 col-4">
+			<input type="text" th:field="*{email}"
+				placeholder="Contact Email" class="form-control mb-4 col-4">
+			<input type="text" th:field="*{phoneNumber}"
+				placeholder="Contact Phone Number" class="form-control mb-4 col-4">
+				
+			<button type="submit" class="btn btn-info col-2"> Save Contact </button>		
+		</form>
+
+	</div>
+</body>
+</html>
